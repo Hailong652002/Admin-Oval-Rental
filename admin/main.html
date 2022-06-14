@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/admin/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="animation-content">
+    <div class="about-content js-text-anmation">
+        <p>Chào mừng bạn đến với trang quản trị Admin</p>
+    </div>
+  </div>
+  <div>
+    <div class="main">
+      <div class="container-nav">
+        <div class="list-group" >
+          <div class="container-list-group">
+            <a href="#" class="list-group-item list-group-item-action js-item"><i class=""></i> Danh mục</a>
+            <a href="#" class="list-group-item list-group-item-action js-item">Thống kê các phòng cho thuê</a>
+            <a href="#" class="list-group-item list-group-item-action js-item">Thống kê doanh thu</a>
+            <a href="#" class="list-group-item list-group-item-action js-item">Thêm phòng</a>
+            <a href="#" class="list-group-item list-group-item-action js-item">Thêm bài viết</a>
+            <a href="#" class="list-group-item list-group-item-action js-item">Danh sách phòng đặt trước</a>
+            <a href="#" class="list-group-item list-group-item-action js-item">Tài khoản</a>
+            <a href="/admin/index.html" class="list-group-item list-group-item-action">Đăng xuất</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-content">
+         
+        <div class="content ">
+    <!-- 0 Danh Muc -->
+      <div class="panel js-panel">
+        <div class="head-panel">
+          <h4>Danh mục</h4>
+          <hr>
+        </div>
+
+              <div class="card" >
+                  <img src="/assets/img/Room/affordableRoom.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Vip Room</h5>
+                    <p class="card-text"></p>                  
+                  </div>
+              </div>
+
+              <div class="card" >
+                  <img src="/assets/img/Room/SingleRoom.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Double Room</h5>
+                    <p class="card-text"></p>
+                  </div>
+              </div>
+
+              <div class="card" >
+                  <img src="/assets/img/Room/vipRoom.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Affordable Room</h5>
+                    <p class="card-text"></p>  
+                  </div>
+              </div>
+
+              <div class="card" >
+                  <img src="/assets/img/Room/doubleRoom.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Vip Room</h5>
+                    <p class="card-text"></p>
+                  </div>
+              </div>
+
+              <div class="card" >
+                  <img src="/assets/img/Room/affordableRoom.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Vip Room</h5>
+                    <p class="card-text"></p>  
+                  </div>
+              </div>
+
+              <div class="card" >
+                  <img src="/assets/img/Room/affordableRoom.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Vip Room</h5>
+                    <p class="card-text"></p>
+                  </div>
+              </div>
+
+              <div class="card" >
+                  <img src="/assets/img/Room/affordableRoom.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Vip Room</h5>
+                    <p class="card-text"></p>
+                  </div>
+              </div>
+
+      </div>
+    <!-- 1 Thong ke cac phong cho thue-->
+      <div class="panel js-panel">
+        <div class="head-panel">
+          <h4>Thống kê các phòng cho thuê</h4>
+          <hr>
+        </div>
+      </div>
+    <!-- 2 Thong Ke doanh thu-->
+      <div class="panel js-panel">
+        <div class="head-panel">
+          <h4>Thống kê doanh thu</h4>
+          <hr>
+        </div>
+      </div>
+    <!-- 3 Them phong-->
+      <div class="panel js-panel">
+        <div class="head-panel">
+          <h4>Thêm phòng</h4>
+          <hr>
+        </div>
+
+        <div class="form-addroom" style="width:35%;">
+          <div class="info-room">
+            <label for="text">Tên phòng</label>
+            <input type="text" class="js-name">
+          </div>
+          <div  class="info-room" >
+            <label for="text">Giá phòng</label>
+            <input type="text" class="js-cost">
+          </div>
+          <div class="info-room">
+
+            <label for="text">Chọn file ảnh</label>
+            <input type="file" placeholder="Nhập file ảnh danh mục"  name="image_file" class="js-image">
+          </div>
+          <div class="info-room">
+            <label for="text">Mô tả</label>
+            <textarea type="text" style="width:100%;height:200px;" class="js-describe"></textarea>
+          </div>
+          <div class="container-form-btn" style="width: 100%;justify-content: center;">
+            <button class="btn btn-primary js-addroom"> Thêm Sản phẩm</button>
+          </div>
+        </div>
+      </div>
+    <!-- 4 Them bai viet-->
+      <div class="panel js-panel">
+        <div class="head-panel">
+          <h4>Thêm bài viết</h4>
+          <hr>
+        </div>
+      </div>
+    <!-- 5 Danh sach phong dat truoc-->
+    <div class="panel js-panel">
+      <div class="head-panel">
+        <h4>Danh sách phòng đặt trước</h4>
+        <hr>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Họ tên</th>
+            <th scope="col">SĐT</th>
+            <th scope="col">Số lượng(người)</th>
+            <th scope="col">Địa chỉ email</th>
+            <th scope="col">Loại phòng</th>
+            <th scope="col">Sửa</th>
+            <th scope="col">Xóa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="js-prop-person">
+            <th scope="row">1</th>
+            <td>Nguyễn Văn An</td>
+            <td>0123456789</td>
+            <td>2</td>
+            <td>An2k2@gmail.com</td>
+            <td>Vip Room</td>
+            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+          </tr>
+          <tr class="js-prop-person">
+            <th scope="row">2</th>
+            <td>Nguyễn Minh Đức</td>
+            <td>0987654321</td>
+            <td>4</td>
+            <td>Ducdz2k@gmail.com</td>
+            <td>Double Room</td>
+            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+          </tr>
+          <tr class="js-prop-person">
+            <th scope="row">3</th>
+            <td>Phùng Thanh Độ</td>
+            <td>0327327732</td>
+            <td>3</td>
+            <td>Dophung@gmail.com</td>
+            <td>Affordable Room</td>
+            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+          </tr>
+          <tr class="js-prop-person">
+            <th scope="row">4</th>
+            <td>Phùng Khoa Học</td>
+            <td>0373132732</td>
+            <td>1</td>
+            <td>phungkhoahoc@gmail.com</td>
+            <td>Single Room</td>
+            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+          </tr>
+          <tr class="js-prop-person">
+            <th scope="row">5</th>
+            <td>Nguyễn Thị Trang</td>
+            <td>0329326632</td>
+            <td>2</td>
+            <td>Trang2k5@gmail.com</td>
+            <td>Affordable Room</td>
+            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+          </tr>
+        </tbody>
+      </table>
+     
+      <form class="booking-form" action="" method="get">
+        <!-- row 1 -->
+        <div class="row pd16">
+          <div class="col-12 col-md-6 col-lg-6">
+            <input class="full-width pd12" type="text" placeholder="Name">
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <input class="full-width pd12" type="tel" placeholder="Phone">
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row pd16">
+          <div class="col-12 col-md-3 ">
+            <label for="quantity">Guests: </label>
+            <input class="pd12" type="number" id="quantity" name="quantity" min="1" max="5" placeholder="0">
+          </div>
+          <div class="col-12 col-md-9">
+            <input class="full-width pd12" type="email" placeholder="Email">
+          </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row pd16">
+          <div class="col-12 col-md-3 col-lg-4">
+            <p>Room type:</p>
+          </div>
+          <div class="col-12 col-md-2 col-lg-2">
+            <input type="radio" id="radio-vip" name="room-Type" value="vip" checked>VIP
+          </div>
+          <div class="col-12 col-md-2 col-lg-2">
+            <input type="radio" id="radio-double" name="room-Type" value="double">Double
+          </div>
+          <div class="col-12 col-md-2 col-lg-2">
+            <input type="radio" id="radio-single" name="room-Type" value="single">Single
+          </div>
+          <div class="col-12 col-md-3 col-lg-2">
+            <input type="radio" id="radio-affordable" name="room-Type" value="affordable">Affordable
+          </div>
+        </div>
+        <!-- row 4 -->
+        <div class="row pd16">
+          <div class="col-12">
+            <input class="form-btn full-width pd12" type="submit" value="Submit">
+          </div>
+        </div>
+    </div>
+    </form>
+    </div>
+    <!-- 6 Tai khoan -->
+    <div class="panel js-panel">
+      <div class="head-panel">
+        <h4>Tài khoản</h4>
+        <hr>
+      </div>
+
+      
+    </div>
+        </div> 
+
+      </div>
+    </div>
+  </div>
+
+
+ 
+    
+  <!-- As a heading -->
+     
+ 
+
+</body>
+<script>
+  var control=document.querySelectorAll('.js-item')
+  var panels=document.querySelectorAll('.js-panel')
+  var btn_addroom = document.querySelector('.js-addroom')
+
+  const name = document.querySelector('.js-name');
+  const cost = document.querySelector('.js-cost');
+  const image = document.querySelector('.js-image');
+  const describe = document.querySelector('.js-describe');
+   
+//set attribute
+  for (var i=0;i<control.length;i++)
+    control[i].setAttribute('key',i);
+  
+//dong tat ca panel ngoai tru panel danh muc
+  for (var i = 1 ; i < panels.length; i++){
+    panels[i].classList.add('close')
+  }
+//tao ham mo panel[i]
+    function Openpanel(n){
+    for (var i = 0 ; i < control.length; i++){
+      if(control[i].getAttribute('key')==n){
+        panels[i].classList.remove('close')
+      }
+      else panels[i].classList.add('close')
+    }
+  }
+ 
+
+  for (var i=0;i<control.length;i++)
+  control[i].addEventListener('click',function(e){
+      switch(e.target.getAttribute('key')){
+      case '0':
+        panels[0].classList.add('open');
+        Openpanel(0)
+        console.log(control[0].getAttribute('key'))
+        break;
+
+      case '1':
+         panels[1].classList.add('open');
+        Openpanel(1)
+        break;
+
+      case '2':
+         panels[2].classList.add('open');
+      Openpanel(2)
+        break;
+
+      case '3':
+         panels[3].classList.add('open');
+      Openpanel(3)
+    name.onchange = function(){
+      title.innerHTML=name.value;
+    }
+    image.onchange = function(){
+      var filename = "/assets/img/Room/"+ image.value.slice(image.value.lastIndexOf('\\')+1,image.value.length)
+      img.src=filename;
+      console.log(filename)
+    }
+
+
+    i = document.createElement('div')
+    i.classList.add('card')
+    var img =document.createElement('img')
+    
+    img.classList.add('card-img-top')
+    var text = document.createElement('div');
+    text.classList.add('card-body');
+    const title = document.createElement('h5');
+    title.classList.add("card-title")
+    text.appendChild(title)
+    i.appendChild(img)
+    i.appendChild(text)
+      
+    const btn_addroom = document.querySelector('.js-addroom') 
+    btn_addroom.addEventListener('click',function(){
+      panels[0].appendChild(i)
+  })
+        break;
+      case '4':
+         panels[4].classList.add('open');
+      Openpanel(4)
+        break;
+      case '5':
+        panels[5].classList.add('open');
+        Openpanel(5)
+        break;
+
+      case '6':
+          Openpanel(6)
+          panels[6].classList.add('open');
+        break;
+      default:
+    }
+  })
+
+
+
+//--------------------------------------------
+iconsDelete =  document.querySelectorAll('.js-icon-delete')
+listitem = document.querySelectorAll('.js-prop-person')
+for (var i=0;i<iconsDelete.length;i++)
+    iconsDelete[i].setAttribute('key',i);
+
+for (var i = 0;i<iconsDelete.length;i++)
+  iconsDelete[i].addEventListener('click',function(e){
+    switch(e.target.getAttribute('key')){
+      case '0':
+        listitem[0].classList.add('close');
+        break;
+      case '1':
+        listitem[1].classList.add('close');
+        break;
+      case '2':
+        listitem[2].classList.add('close');
+        break;
+      case '3':
+        listitem[3].classList.add('close');
+        break;
+      case '4':
+        listitem[4].classList.add('close');
+        break;
+    }
+})
+
+
+//--------------------------------------------
+
+  //------------------------------------------
+  var textMove = document.querySelector('.js-text-anmation')
+  //------------------------------------------
+
+</script>
+
+</html>
