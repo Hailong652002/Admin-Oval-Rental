@@ -127,6 +127,28 @@ body{
     margin-bottom: 16px;
 }
 
+
+.booking-form {
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+}
+.booking-form input{
+    min-width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+}
+.booking-form .form-btn {
+    background-color: #fa9e1b;
+    border: none;
+}
+.inp-email{
+    bottom: 0px;
+}
+.col-md-9{
+    margin: 22px 0;
+}
+
 .open{
     display: block;
 }

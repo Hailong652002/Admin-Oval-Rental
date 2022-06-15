@@ -43,7 +43,7 @@
             <a href="#" class="list-group-item list-group-item-action js-item">Thêm bài viết</a>
             <a href="#" class="list-group-item list-group-item-action js-item">Danh sách phòng đặt trước</a>
             <a href="#" class="list-group-item list-group-item-action js-item">Tài khoản</a>
-            <a href="/admin/index.html" class="list-group-item list-group-item-action">Đăng xuất</a>
+            <a href="/index.html" class="list-group-item list-group-item-action">Đăng xuất</a>
           </div>
         </div>
 
@@ -193,7 +193,7 @@
             <td>2</td>
             <td>An2k2@gmail.com</td>
             <td>Vip Room</td>
-            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
             <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
           </tr>
           <tr class="js-prop-person">
@@ -203,7 +203,7 @@
             <td>4</td>
             <td>Ducdz2k@gmail.com</td>
             <td>Double Room</td>
-            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
             <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
           </tr>
           <tr class="js-prop-person">
@@ -213,7 +213,7 @@
             <td>3</td>
             <td>Dophung@gmail.com</td>
             <td>Affordable Room</td>
-            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
             <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
           </tr>
           <tr class="js-prop-person">
@@ -223,7 +223,7 @@
             <td>1</td>
             <td>phungkhoahoc@gmail.com</td>
             <td>Single Room</td>
-            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
             <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
           </tr>
           <tr class="js-prop-person">
@@ -233,20 +233,20 @@
             <td>2</td>
             <td>Trang2k5@gmail.com</td>
             <td>Affordable Room</td>
-            <td><i class="bi bi-pencil-square "style="cursor:pointer;" ></i></td>
+            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
             <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
           </tr>
         </tbody>
       </table>
      
-      <form class="booking-form" action="" method="get">
+      <form class="booking-form">
         <!-- row 1 -->
         <div class="row pd16">
           <div class="col-12 col-md-6 col-lg-6">
-            <input class="full-width pd12" type="text" placeholder="Name">
+            <input class="full-width pd12 js-inp-name" type="text" placeholder="Name">
           </div>
           <div class="col-12 col-md-6 col-lg-6">
-            <input class="full-width pd12" type="tel" placeholder="Phone">
+            <input class="full-width pd12 js-inp-phone" type="tel" placeholder="Phone">
           </div>
         </div>
 
@@ -254,10 +254,10 @@
         <div class="row pd16">
           <div class="col-12 col-md-3 ">
             <label for="quantity">Guests: </label>
-            <input class="pd12" type="number" id="quantity" name="quantity" min="1" max="5" placeholder="0">
+            <input class="pd12 js-inp-guests" type="number" id="quantity" name="quantity" min="1" max="5" placeholder="0">
           </div>
           <div class="col-12 col-md-9">
-            <input class="full-width pd12" type="email" placeholder="Email">
+            <input class="inp-email full-width pd12 js-inp-email" type="email" placeholder="Email">
           </div>
         </div>
         <!-- row 3 -->
@@ -266,22 +266,22 @@
             <p>Room type:</p>
           </div>
           <div class="col-12 col-md-2 col-lg-2">
-            <input type="radio" id="radio-vip" name="room-Type" value="vip" checked>VIP
+            <input type="radio" class="js-Room" name="room-Type" value="vip" checked>VIP Room
           </div>
           <div class="col-12 col-md-2 col-lg-2">
-            <input type="radio" id="radio-double" name="room-Type" value="double">Double
+            <input type="radio" class="js-Room" name="room-Type" value="double">Double Room
           </div>
           <div class="col-12 col-md-2 col-lg-2">
-            <input type="radio" id="radio-single" name="room-Type" value="single">Single
+            <input type="radio" class="js-Room" name="room-Type" value="single">Single Room
           </div>
           <div class="col-12 col-md-3 col-lg-2">
-            <input type="radio" id="radio-affordable" name="room-Type" value="affordable">Affordable
+            <input type="radio" class="js-Room" name="room-Type" value="affordable">Affordable Room
           </div>
         </div>
         <!-- row 4 -->
         <div class="row pd16">
           <div class="col-12">
-            <input class="form-btn full-width pd12" type="submit" value="Submit">
+            <input class="form-btn full-width pd12 js-btn-submit" type="submit" value="Submit">
           </div>
         </div>
     </div>
@@ -293,8 +293,6 @@
         <h4>Tài khoản</h4>
         <hr>
       </div>
-
-      
     </div>
         </div> 
 
@@ -302,9 +300,6 @@
     </div>
   </div>
 
-
- 
-    
   <!-- As a heading -->
      
  
@@ -342,30 +337,31 @@
   for (var i=0;i<control.length;i++)
   control[i].addEventListener('click',function(e){
       switch(e.target.getAttribute('key')){
-      case '0':
+//--------------------------------------------------------------------------------
+      case '0'://danh muc
         panels[0].classList.add('open');
         Openpanel(0)
         console.log(control[0].getAttribute('key'))
         break;
-
-      case '1':
+//--------------------------------------------------------------------------------
+      case '1'://thong ke cac phong cho thue
          panels[1].classList.add('open');
         Openpanel(1)
         break;
-
-      case '2':
+//--------------------------------------------------------------------------------
+      case '2'://thong ke doanh thu
          panels[2].classList.add('open');
       Openpanel(2)
         break;
-
-      case '3':
+//--------------------------------------------------------------------------------
+      case '3'://them phong
          panels[3].classList.add('open');
       Openpanel(3)
     name.onchange = function(){
       title.innerHTML=name.value;
     }
     image.onchange = function(){
-      var filename = "/assets/img/Room/"+ image.value.slice(image.value.lastIndexOf('\\')+1,image.value.length)
+      var filename = "/assets/image/"+ image.value.slice(image.value.lastIndexOf('\\')+1,image.value.length)
       img.src=filename;
       console.log(filename)
     }
@@ -386,22 +382,139 @@
       
     const btn_addroom = document.querySelector('.js-addroom') 
     btn_addroom.addEventListener('click',function(){
+      name.value=""
+      cost.value=""
+      image.value=""
+      describe.value=""
       panels[0].appendChild(i)
-  })
+    })
         break;
-      case '4':
+//--------------------------------------------------------------------------------
+     
+      case '4'://them bai viet
          panels[4].classList.add('open');
-      Openpanel(4)
+        Openpanel(4)
         break;
-      case '5':
+//--------------------------------------------------------------------------------
+      case '5'://danh sach phong dat truoc
         panels[5].classList.add('open');
         Openpanel(5)
-        break;
+        //xoa danh muc
+        iconsDelete =  document.querySelectorAll('.js-icon-delete')
+        listitem = document.querySelectorAll('.js-prop-person')
+        for (var i=0;i<iconsDelete.length;i++)
+        iconsDelete[i].setAttribute('key',i);
+        for (var i = 0;i<iconsDelete.length;i++)
+        iconsDelete[i].addEventListener('click',function(e){
+        switch(e.target.getAttribute('key')){
+          case '0':
+            listitem[0].classList.add('close');
+            break;
+          case '1':
+            listitem[1].classList.add('close');
+            break;
+          case '2':
+            listitem[2].classList.add('close');
+            break;
+          case '3':
+            listitem[3].classList.add('close');
+            break;
+          case '4':
+            listitem[4].classList.add('close');
+          break;
+          }
+        })
 
-      case '6':
+          //sua danh muc
+          iconsfix = document.querySelectorAll('.js-icon-fix')
+          inp_name = document.querySelector('.js-inp-name')
+          inp_phone = document.querySelector('.js-inp-phone')
+          inp_guests = document.querySelector('.js-inp-guests')
+          inp_email = document.querySelector('.js-inp-email')
+          btn_submit = document.querySelector('.js-btn-submit')
+          inp_room = document.querySelectorAll('.js-Room')
+          
+          for (var i=0;i<iconsfix.length;i++)
+            iconsfix[i].setAttribute('key',i);
+          for (var i=0;i<iconsfix.length;i++)
+          iconsfix[i].addEventListener('click',function(e){
+            switch(e.target.getAttribute('key')){
+          case '0':
+            list = document.querySelectorAll('td')//list[] = thong tin khach hang
+              inp_name.value=list[0].innerHTML
+              inp_phone.value=list[1].innerHTML
+              inp_guests.value=list[2].innerHTML
+              inp_email.value=list[3].innerHTML
+            btn_submit.onclick = function(){
+              list[0].innerHTML=inp_name.value
+              list[1].innerHTML=inp_phone.value
+              list[2].innerHTML=inp_guests.value
+              list[3].innerHTML=inp_email.value
+            }
+           
+            break;
+          case '1':
+            list = document.querySelectorAll('td')//list[] = thong tin khach hang
+              inp_name.value=list[7].innerHTML
+              inp_phone.value=list[8].innerHTML
+              inp_guests.value=list[9].innerHTML
+              inp_email.value=list[10].innerHTML
+            btn_submit.onclick = function(){
+              list[7].innerHTML=inp_name.value
+              list[8].innerHTML=inp_phone.value
+              list[9].innerHTML=inp_guests.value
+              list[10].innerHTML=inp_email.value
+            }
+            break;
+          case '2':
+          list = document.querySelectorAll('td')//list[] = thong tin khach hang
+              inp_name.value=list[14].innerHTML
+              inp_phone.value=list[15].innerHTML
+              inp_guests.value=list[16].innerHTML
+              inp_email.value=list[17].innerHTML
+            btn_submit.onclick = function(){
+              list[14].innerHTML=inp_name.value
+              list[15].innerHTML=inp_phone.value
+              list[16].innerHTML=inp_guests.value
+              list[17].innerHTML=inp_email.value
+            }
+            break;
+          case '3':
+          list = document.querySelectorAll('td')//list[] = thong tin khach hang
+              inp_name.value=list[21].innerHTML
+              inp_phone.value=list[22].innerHTML
+              inp_guests.value=list[23].innerHTML
+              inp_email.value=list[24].innerHTML
+            btn_submit.onclick = function(){
+              list[21].innerHTML=inp_name.value
+              list[22].innerHTML=inp_phone.value
+              list[23].innerHTML=inp_guests.value
+              list[24].innerHTML=inp_email.value
+            }
+            break;
+          case '4':
+          list = document.querySelectorAll('td')//list[] = thong tin khach hang
+              inp_name.value=list[28].innerHTML
+              inp_phone.value=list[29].innerHTML
+              inp_guests.value=list[30].innerHTML
+              inp_email.value=list[31].innerHTML
+            btn_submit.onclick = function(){
+              list[28].innerHTML=inp_name.value
+              list[29].innerHTML=inp_phone.value
+              list[30].innerHTML=inp_guests.value
+              list[31].innerHTML=inp_email.value
+            }
+          break;
+            }
+          })
+
+        break;
+//--------------------------------------------------------------------------------
+      case '6'://tai khoan
           Openpanel(6)
           panels[6].classList.add('open');
         break;
+//--------------------------------------------------------------------------------
       default:
     }
   })
@@ -409,32 +522,6 @@
 
 
 //--------------------------------------------
-iconsDelete =  document.querySelectorAll('.js-icon-delete')
-listitem = document.querySelectorAll('.js-prop-person')
-for (var i=0;i<iconsDelete.length;i++)
-    iconsDelete[i].setAttribute('key',i);
-
-for (var i = 0;i<iconsDelete.length;i++)
-  iconsDelete[i].addEventListener('click',function(e){
-    switch(e.target.getAttribute('key')){
-      case '0':
-        listitem[0].classList.add('close');
-        break;
-      case '1':
-        listitem[1].classList.add('close');
-        break;
-      case '2':
-        listitem[2].classList.add('close');
-        break;
-      case '3':
-        listitem[3].classList.add('close');
-        break;
-      case '4':
-        listitem[4].classList.add('close');
-        break;
-    }
-})
-
 
 //--------------------------------------------
 
