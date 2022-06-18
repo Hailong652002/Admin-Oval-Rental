@@ -22,9 +22,9 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/content.css">
 </head>
 <body>
   <div class="animation-content">
@@ -60,7 +60,7 @@
         </div>
 
               <div class="card" >
-                  <img src="/assets/image/vipRoom.jpg" class="card-img-top" alt="...">
+                  <img src="./assets/image/vipRoom.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Vip Room</h5>
                     <p class="card-text"></p>                  
@@ -68,7 +68,7 @@
               </div>
 
               <div class="card" >
-                  <img src="/assets/image/doubleRoom.jpg" class="card-img-top" alt="...">
+                  <img src="./assets/image/doubleRoom.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Double Room</h5>
                     <p class="card-text"></p>
@@ -76,7 +76,7 @@
               </div>
 
               <div class="card" >
-                  <img src="/assets/image/affordableRoom.jpg" class="card-img-top" alt="...">
+                  <img src="./assets/image/affordableRoom.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Affordable Room</h5>
                     <p class="card-text"></p>  
@@ -84,7 +84,7 @@
               </div>
 
               <div class="card" >
-                  <img src="/assets/image/vipRoom.jpg" class="card-img-top" alt="...">
+                  <img src="./assets/image/vipRoom.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Vip Room</h5>
                     <p class="card-text"></p>
@@ -92,7 +92,7 @@
               </div>
 
               <div class="card" >
-                  <img src="/assets/image/SingleRoom.jpg" class="card-img-top" alt="...">
+                  <img src="./assets/image/SingleRoom.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">single Room</h5>
                     <p class="card-text"></p>  
@@ -100,7 +100,7 @@
               </div>
 
               <div class="card" >
-                  <img src="/assets/image/doubleRoom.jpg" class="card-img-top" alt="...">
+                  <img src="./assets/image/doubleRoom.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Double Room</h5>
                     <p class="card-text"></p>
@@ -108,7 +108,7 @@
               </div>
 
               <div class="card" >
-                  <img src="/assets/image/affordableRoom.jpg" class="card-img-top" alt="...">
+                  <img src="./assets/image/affordableRoom.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">affordable Room</h5>
                     <p class="card-text"></p>
@@ -126,7 +126,7 @@
           <div class="row">
             <div class="col content-pay-left">
               <h4>Thanh toán bằng mã QR</h4>
-              <img src="/assets/image/item_qr.png" alt="">
+              <img src="./assets/image/item_qr.png" alt="">
               <h4>Thanh toán qua thẻ ngân ATM</h4>
               <p>
                 BIDV:349328439432049
@@ -287,7 +287,7 @@
         </tbody>
       </table>
      
-      <form class="booking-form">
+      <div class="booking-form">
         <!-- row 1 -->
         <div class="row pd16">
           <div class="col-12 col-md-6 col-lg-6">
@@ -333,7 +333,7 @@
           </div>
         </div>
     </div>
-    </form>
+  </div>
     </div>
     <!-- 6 Tai khoan -->
     <div class="panel js-panel">
@@ -417,7 +417,7 @@
       title.innerHTML=name.value;
     }
     image.onchange = function(){
-      var filename = "/assets/image/"+ image.value.slice(image.value.lastIndexOf('\\')+1,image.value.length)
+      var filename = "./assets/image/"+ image.value.slice(image.value.lastIndexOf('\\')+1,image.value.length)
       img.src=filename;
       console.log(filename)
     }
