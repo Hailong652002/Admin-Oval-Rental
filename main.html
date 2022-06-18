@@ -24,6 +24,7 @@
     referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/content.css">
 </head>
 <body>
   <div class="animation-content">
@@ -37,7 +38,7 @@
         <div class="list-group" >
           <div class="container-list-group">
             <a href="#" class="list-group-item list-group-item-action js-item"><i class=""></i> Danh mục</a>
-            <a href="#" class="list-group-item list-group-item-action js-item">Thống kê các phòng cho thuê</a>
+            <a href="#" class="list-group-item list-group-item-action js-item">Thanh toán</a>
             <a href="#" class="list-group-item list-group-item-action js-item">Thống kê doanh thu</a>
             <a href="#" class="list-group-item list-group-item-action js-item">Thêm phòng</a>
             <a href="#" class="list-group-item list-group-item-action js-item">Thêm bài viết</a>
@@ -118,8 +119,31 @@
     <!-- 1 Thong ke cac phong cho thue-->
       <div class="panel js-panel">
         <div class="head-panel">
-          <h4>Thống kê các phòng cho thuê</h4>
+          <h4>Thanh toán</h4>
           <hr>
+        </div>
+        <div class="container-pay">
+          <div class="row">
+            <div class="col content-pay-left">
+              <h4>Thanh toán bằng mã QR</h4>
+              <img src="/assets/image/item_qr.png" alt="">
+              <h4>Thanh toán qua thẻ ngân ATM</h4>
+              <p>
+                BIDV:349328439432049
+                MB:324342342343432
+              </p>
+            </div>
+            <div class="col content-pay-right">
+              <h4>Thanh toán bằng tiền mặt</h4>
+              <form action="">
+                <input type="text" name="" placeholder="Họ và tên:" required id="" class="form-control-1">
+                <input type="text" name="" placeholder="Số phòng:" required id="" class="form-control-2">
+                <input type="text" name="" placeholder="Ngày thuê:" required id="" class="form-control-3">
+                <input type="text" name="" placeholder="Ngày trả" required id="" class="form-control-4">
+                <input type="text" name="" placeholder="Thành tiền" required id="" class="form-control-5">
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     <!-- 2 Thong Ke doanh thu-->
@@ -127,6 +151,30 @@
         <div class="head-panel">
           <h4>Thống kê doanh thu</h4>
           <hr>
+        </div>
+        <div class="chart-layout">
+          <div class="chart-layout__item" style="--percent:10%">10%</div>
+          <div class="chart-layout__item" style="--percent:30%">30%</div>
+          <div class="chart-layout__item" style="--percent:50%">50%</div>
+          <div class="chart-layout__item" style="--percent:98%">98%</div>
+          <div class="chart-layout__item" style="--percent:80%">80%</div>
+          <div class="chart-layout__item" style="--percent:76%">76%</div>
+          <div class="chart-layout__item" style="--percent:68%">68%</div>
+          <div class="chart-layout__item" style="--percent:55%">55%</div>
+          <div class="chart-layout__item" style="--percent:40%">40%</div>
+          <div class="chart-layout__item" style="--percent:25%">25%</div>
+        </div>
+        <div class="number-year">
+          <p>2013</p>
+          <p>2014</p>
+          <p>2015</p>
+          <p>2016</p>
+          <p>2017</p>
+          <p>2018</p>
+          <p>2019</p>
+          <p>2020</p>
+          <p>2021</p>
+          <p>2022</p>
         </div>
       </div>
     <!-- 3 Them phong-->
