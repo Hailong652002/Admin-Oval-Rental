@@ -44,6 +44,22 @@
    display: block;
    margin: 16px;
 }
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
 /* Thong ke doanh thu */
 .chart-layout{
     margin: 36px auto 0 auto;
@@ -63,6 +79,7 @@
     background-color: #EF5122;
     animation: growth ease-in 0.9s;
 }
+
 @keyframes growth {
     from{
         opacity: 0;

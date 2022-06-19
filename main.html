@@ -136,12 +136,47 @@
             <div class="col content-pay-right">
               <h4>Thanh toán bằng tiền mặt</h4>
               <form action="">
-                <input type="text" name="" placeholder="Họ và tên:" required id="" class="form-control-1">
-                <input type="text" name="" placeholder="Số phòng:" required id="" class="form-control-2">
-                <input type="text" name="" placeholder="Ngày thuê:" required id="" class="form-control-3">
-                <input type="text" name="" placeholder="Ngày trả" required id="" class="form-control-4">
-                <input type="text" name="" placeholder="Thành tiền" required id="" class="form-control-5">
+                <input type="text" name="" placeholder="Họ và tên:" required id="" class="form-control">
+                <div class="name" style="display: none;color:red"><p>Bạn chưa nhập họ tên</p></div>
+                <input type="text" name="" placeholder="Số phòng:" required id="" class="form-control">
+                <div class="room-number" style="display: none;color:red"><p>Bạn chưa nhập số phòng</p></div>
+                <input type="text" name="" placeholder="Ngày thuê :" required id="" class="form-control">
+                <div class="rental-date" style="display: none;color:red"><p>Bạn chưa nhập ngày thuê</p></div>
+                <input type="text" name="" placeholder="Ngày trả" required id="" class="form-control">
+                <div class="check-out-rental" style="display: none;color:red"><p>Bạn chưa nhập ngày trả</p></div>
+                <input type="text" name="" placeholder="Tổng tiền" required id="" class="form-control">
+                <div class="total-money" style="display: none;color:red"><p>Bạn chưa nhập tổng tiền</p></div>
               </form>
+              <button href = "#" class="btn js-btn"> Tạo hoá đơn </button>
+              <script>btn=document.querySelector(".js-btn")
+              inp = document.querySelectorAll(".form-control")
+              err =[];
+              btn.onclick = function(){
+                if (inp[0].value=="") {
+                document.querySelector('.name').classList.add('open');
+                }
+                if (inp[1].value==""){
+                document.querySelector('.room-number').classList.add('open')
+                }
+                if (inp[2].value==""){
+                document.querySelector('.rental-date').classList.add('open')
+                }
+                if (inp[3].value==""){
+                document.querySelector('.check-out-rental').classList.add('open')
+                }
+                if (inp[4].value==""){
+                document.querySelector('.total-money').classList.add('open')
+                }
+                for (var i=0;i<inp.length;i++)
+                  if(inp[i].value==""){
+                    break;
+                  }
+                  else
+                  alert("tao hoa don thanh cong");
+                for (var i=0;i<inp.length;i++)
+                  inp[i].value="";
+              }
+              </script>
             </div>
           </div>
         </div>
