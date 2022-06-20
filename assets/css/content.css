@@ -40,9 +40,9 @@
 }
 
 .content-pay-right input{
+   padding: 16px;
+   margin: 8px;
    width: 100%;
-   display: block;
-   margin: 16px;
 }
 
 .btn {
