@@ -6,15 +6,13 @@
     .container-nav{
         flex-grow: inherit;
         position: absolute;
-        display: block;
-        
+         display: block;
     }
     .panel{
         margin-left: 10%;
         margin-top: 20%;
     }
     .container-list-group{
-        display: none;
         height: 100%;
         min-width: 1040px;
     }
@@ -24,10 +22,49 @@
     .menu{
         display: block;
     }
+    .content-pay-left h4 {
+        text-align: none; 
+    }
+
+    .chart-layout{
+        margin-left: -10%;
+    }
+
+    .chart-layout__item{
+        width: 30px;
+        color: #fff;
+        text-align:left;
+        height: var(--percent);
+        background-color: #EF5122;
+        animation: growth ease-in 0.9s;
+    }
     
+    .number-year{
+        margin-left: -10%;
+    }
+
+    .form-addroom input,textarea{
+        min-width: 300px;
+        padding: 6px;
+    }
+    .form-addroom button{
+        min-width: 150px;
+    }
+    .info-room{
+        margin-bottom: 16px;
+    }
+
+    table{
+        font-size: 10px;
+    }
+    table td, th{
+        padding: none!important;
+    }
+    .responsive-tb{
+        margin-left: -15%;
+    }
 }
 
 
 @media (max-width:720px) {
-    
 }

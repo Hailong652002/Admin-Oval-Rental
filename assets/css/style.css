@@ -30,7 +30,7 @@ body{
 }
 .container-list-group{
     min-width: 260px;
-    height: 96vh;
+    height: 100vh;
     background-color: rgba(52,46,80,0.8);
 }
 .list-group .list-group-item{
@@ -105,6 +105,8 @@ body{
 .container-account input , button{
     padding: 16px !important;
     margin: 20px;
+    display: block;
+   
 }
 
 .menu{
@@ -126,6 +128,66 @@ body{
     padding: 4px;
     margin-right: 15%;
 }
+/*************************/
+.content-pay-right input{
+    min-width: 300px;
+    padding: 8px;
+    margin-top: 8px;
+}
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+/* Thong ke doanh thu */
+.chart-layout{
+    margin: 36px auto 0 auto;
+    padding-bottom: 14px;
+    height: 568px;  
+    background-color: #fff;
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.chart-layout__item{
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    height: var(--percent);
+    background-color: #EF5122;
+    animation: growth ease-in 0.9s;
+}
+
+@keyframes growth {
+    from{
+        opacity: 0;
+        height: calc(var(--percent) - 50%);
+    }
+    to{
+        opacity: 1;
+        height: var(--percent);
+    } 
+}
+
+.number-year{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
 /*************************/
 .err-open{
     display: block!important;

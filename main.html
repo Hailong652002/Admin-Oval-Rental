@@ -47,7 +47,7 @@
             <a href="#" class="list-group-item list-group-item-action js-item">Danh sách các phòng đang thuê</a>
             <a href="#" class="list-group-item list-group-item-action js-item">Danh sách phòng đặt trước</a>
             <a href="#" class="list-group-item list-group-item-action js-item">Tài khoản</a>
-            <a href="/index.html" class="list-group-item list-group-item-action">Đăng xuất</a>
+            <a href="./index.html" class="list-group-item list-group-item-action">Đăng xuất</a>
           </div>
         </div>
 
@@ -133,6 +133,8 @@
               <h4>Thanh toán qua thẻ ngân ATM</h4>
               <p>
                 BIDV:349328439432049
+              </p>
+              <p></p>
                 MB:324342342343432
               </p>
             </div>
@@ -217,12 +219,45 @@
           </div>
         </div>
       </div>
-    <!-- 4 Them bai viet-->
+    <!-- 4 Danh sach cac phong cho thue-->
       <div class="panel js-panel">
         <div class="head-panel">
           <h4>Danh sách các phòng cho thuê</h4>
           <hr>
         </div>
+        <div class="card" >
+          <img src="./assets/image/SingleRoom.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vip Room</h5>
+            <p class="card-text"></p>                  
+          </div>
+      </div>
+
+      <div class="card" >
+          <img src="./assets/image/affordableRoom.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Affordable Room</h5>
+            <p class="card-text"></p>  
+          </div>
+      </div>
+
+      <div class="card" >
+          <img src="./assets/image/vipRoom.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vip Room</h5>
+            <p class="card-text"></p>
+          </div>
+      </div>
+
+      <div class="card" >
+          <img src="./assets/image//doubleRoom.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">single Room</h5>
+            <p class="card-text"></p>  
+          </div>
+      </div>
+
+      </div>
         
       </div>
     <!-- 5 Danh sach phong dat truoc-->
@@ -320,37 +355,29 @@
           </div>
         </div>
     </div>
-  </div>
     </div>
+
     <!-- 6 Tai khoan -->
-    <div class="panel js-panel">
+    <div class="panel accout js-panel">
       <div class="head-panel">
         <h4>Tài khoản</h4>
         <hr>
         <div class="container-account">
           <h4>Đổi mật khẩu</h4>
-          <input type="text" placeholder="Tên đăng nhập">
-          <input type="password" placeholder="Nhập lại mật khẩu">
-          <input type="password" placeholder="Mật khẩu mới">
-          <button class="btn" onclick="">Đổi mật khẩu</button>
+          <input type="text" class="js-inp-accout" placeholder="Tên đăng nhập">
+          <div class="lb-error" style="display:none;color:red;"><p>Bạn chưa nhập tên đăng nhập</p></div>
+          <input type="password" class="js-inp-accout" placeholder="Nhập lại mật khẩu">
+          <div class="lb-error" style="display:none;color:red;"><p>Bạn chưa nhập lại mật khẩu</p></div>
+          <input type="password" class="js-inp-accout" placeholder="Mật khẩu mới">
+          <div class="lb-error" style="display:none;color:red;"><p>Bạn chưa nhập mật khẩu mới</p></div>
+          <button class="btn js-btn-change-password" onclick="">Đổi mật khẩu</button>
           </div>
         </div>
       </div>
-    </div>
-        </div> 
 
-      </div>
-    </div>
-  </div>
-
-  <!-- As a heading -->
-     
+            </div>
+          </div>
  
-
 </body>
-<script>
-  
-
-</script>
 <script src="./main.js"></script>
 </html>

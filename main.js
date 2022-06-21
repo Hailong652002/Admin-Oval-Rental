@@ -1,21 +1,19 @@
 /***** xu li Responsive ************************/
 iconmenu = document.querySelector('.js-open-nav')
 nav = document.querySelector('.container-list-group')
-i=0
 iconmenu.onclick = function(){    
-  if (i==0) nav.classList.add('open');
-  else  nav.classList.remove('open');
+  if (nav.style.display == "none") nav.style.display = "block";
+  else nav.style.display = "none";
 }
 /******* code chuyen panel ************************/
 
 var control=document.querySelectorAll('.js-item')
-  var panels=document.querySelectorAll('.js-panel')
-  var btn_addroom = document.querySelector('.js-addroom')
-
-  const name = document.querySelector('.js-name');
-  const cost = document.querySelector('.js-cost');
-  const image = document.querySelector('.js-image');
-  const describe = document.querySelector('.js-describe');
+var panels=document.querySelectorAll('.js-panel')
+var btn_addroom = document.querySelector('.js-addroom')
+const name = document.querySelector('.js-name');
+const cost = document.querySelector('.js-cost');
+const image = document.querySelector('.js-image');
+const describe = document.querySelector('.js-describe');
    
 //set attribute
   for (var i=0;i<control.length;i++)
@@ -84,20 +82,16 @@ var control=document.querySelectorAll('.js-item')
           else err=0;
           for (i=0;i<inp.length;i++){
             inp[i].value="";
-          }
-          
-          
-            
-          
+          } 
         }
         break;
 //--------------------------------------------------------------------------------
-      case '2'://Thanh toan
+      case '2'://Thống kê doanh thu
          panels[2].classList.add('open');
       Openpanel(2)
         break;
 //--------------------------------------------------------------------------------
-      case '3'://them phong
+      case '3'://thêm phòng
          panels[3].classList.add('open');
       Openpanel(3)
     name.onchange = function(){
@@ -256,6 +250,21 @@ var control=document.querySelectorAll('.js-item')
       case '6'://tai khoan
           Openpanel(6)
           panels[6].classList.add('open');
+          btn = document.querySelector(".js-btn-change-password")
+          inp = document.querySelectorAll(".js-inp-accout")
+          error = document.querySelectorAll(".lb-error")
+          err=0;
+          btn.onclick = function(){
+            if(inp[0].value=="") {err++; error[0].classList.add("err-open")}
+            if(inp[1].value=="") {err++; error[1].classList.add("err-open")}
+            if(inp[2].value=="") {err++; error[2].classList.add("err-open")}
+            if (err==0) {
+            inp[0].value="";inp[1].value="";inp[2].value="";
+            alert("doi mat khau thanh cong");}
+            else err=0;
+            
+          }
+
         break;
 //--------------------------------------------------------------------------------
       default:
