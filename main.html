@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="main">
-      <div class="container-nav">
+      <div class="container-nav" style="width:100vw">
         <!-----------------dong mo thanh nav responsive------------------------->
         <div class="menu">
           <p>ADMIN Oval Rental</p>
@@ -266,66 +266,69 @@
         <h4>Danh sách phòng đặt trước</h4>
         <hr>
       </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">STT</th>
-            <th scope="col">Họ tên</th>
-            <th scope="col">SĐT</th>
-            <th scope="col">Số lượng(người)</th>
-            <th scope="col">Địa chỉ email</th>
-            <th scope="col">Sửa</th>
-            <th scope="col">Xóa</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="js-prop-person">
-            <th scope="row">1</th>
-            <td>Nguyễn Văn An</td>
-            <td>0123456789</td>
-            <td>2</td>
-            <td>An2k2@gmail.com</td>
-            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
-            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
-          </tr>
-          <tr class="js-prop-person">
-            <th scope="row">2</th>
-            <td>Nguyễn Minh Đức</td>
-            <td>0987654321</td>
-            <td>4</td>
-            <td>Ducdz2k@gmail.com</td>
-            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
-            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
-          </tr>
-          <tr class="js-prop-person">
-            <th scope="row">3</th>
-            <td>Phùng Thanh Độ</td>
-            <td>0327327732</td>
-            <td>3</td>
-            <td>Dophung@gmail.com</td>
-            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
-            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
-          </tr>
-          <tr class="js-prop-person">
-            <th scope="row">4</th>
-            <td>Phùng Khoa Học</td>
-            <td>0373132732</td>
-            <td>1</td>
-            <td>phungkhoahoc@gmail.com</td>
-            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
-            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
-          </tr>
-          <tr class="js-prop-person">
-            <th scope="row">5</th>
-            <td>Nguyễn Thị Trang</td>
-            <td>0329326632</td>
-            <td>2</td>
-            <td>Trang2k5@gmail.com</td>
-            <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
-            <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
-          </tr>
-        </tbody>
-      </table>
+      <div style="overflow-x:auto">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">STT</th>
+              <th scope="col">Họ tên</th>
+              <th scope="col">SĐT</th>
+              <th scope="col">Số lượng(người)</th>
+              <th scope="col">Địa chỉ email</th>
+              <th scope="col">Sửa</th>
+              <th scope="col">Xóa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="js-prop-person">
+              <th scope="row">1</th>
+              <td>Nguyễn Văn An</td>
+              <td>0123456789</td>
+              <td>2</td>
+              <td>An2k2@gmail.com</td>
+              <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
+              <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+            </tr>
+            <tr class="js-prop-person">
+              <th scope="row">2</th>
+              <td>Nguyễn Minh Đức</td>
+              <td>0987654321</td>
+              <td>4</td>
+              <td>Ducdz2k@gmail.com</td>
+              <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
+              <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+            </tr>
+            <tr class="js-prop-person">
+              <th scope="row">3</th>
+              <td>Phùng Thanh Độ</td>
+              <td>0327327732</td>
+              <td>3</td>
+              <td>Dophung@gmail.com</td>
+              <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
+              <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+            </tr>
+            <tr class="js-prop-person">
+              <th scope="row">4</th>
+              <td>Phùng Khoa Học</td>
+              <td>0373132732</td>
+              <td>1</td>
+              <td>phungkhoahoc@gmail.com</td>
+              <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
+              <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+            </tr>
+            <tr class="js-prop-person">
+              <th scope="row">5</th>
+              <td>Nguyễn Thị Trang</td>
+              <td>0329326632</td>
+              <td>2</td>
+              <td>Trang2k5@gmail.com</td>
+              <td><i class="bi bi-pencil-square js-icon-fix "style="cursor:pointer;" ></i></td>
+              <td><i class="bi bi-trash js-icon-delete" style="cursor:pointer;"></i></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
      
       <div class="booking-form">
         <!-- row 1 -->

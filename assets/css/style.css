@@ -82,7 +82,7 @@ body{
 .booking-form {
     width: 90%;
     max-width: 90%;
-    margin: auto;
+    padding: auto;
 }
 .booking-form input{
     min-width: 100%;
